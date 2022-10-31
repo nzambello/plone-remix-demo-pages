@@ -21,6 +21,7 @@ import { useDirection, useLocale } from '~/utils/use-i18n.hook';
 import { i18n, localeCookie } from '~/utils/i18n.server';
 import { removeTrailingSlash } from '~/utils/remove-trailing-slash';
 import { useProgress } from '~/utils/use-progress.hook';
+import { MetronomeLinks } from '@metronome-sh/react';
 
 import config from './config';
 
@@ -106,6 +107,7 @@ function Document({
         {title ? <title>{title}</title> : null}
         <Meta />
         <Links />
+        <MetronomeLinks />
       </head>
       <body>
         {children}
