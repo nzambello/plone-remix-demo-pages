@@ -108,6 +108,11 @@ function Document({
         <Meta />
         <Links />
         <MetronomeLinks />
+        <script
+          defer
+          data-domain="plone-remix-demo.pages.dev"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </head>
       <body>
         {children}
